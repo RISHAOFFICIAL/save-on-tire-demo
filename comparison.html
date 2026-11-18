@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Before &amp; After — Save On Tire Complete Auto Repair Website</title>
+<meta name="description" content="Before and after comparison of the Save On Tire Complete Auto Repair website redesign by Lexis Sapphire Studio.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Archivo', -apple-system, sans-serif;
+  background: #F5F5F5;
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+h1, h2, h3, .oswald { font-family: 'Oswald', sans-serif; text-transform: uppercase; }
+.header {
+  background: #111;
+  color: #fff;
+  text-align: center;
+  padding: 36px 20px 28px;
+}
+.header .kicker {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: #C8102E;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.header h1 { font-size: clamp(1.6rem, 4vw, 2.4rem); line-height: 1.15; }
+.header p { color: #AAA; margin-top: 8px; font-size: 1rem; }
+.panels {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 800px) { .panels { grid-template-columns: 1fr; } }
+.panel-label {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.panel-label.before { color: #C8102E; }
+.panel-label.after { color: #2E7D32; }
+.browser-frame {
+  background: #fff;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.browser-bar {
+  background: #E8E8E8;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #DDD;
+}
+.browser-bar .dot { width: 12px; height: 12px; border-radius: 50%; }
+.browser-bar .url {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #DDD;
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.browser-body { height: 600px; overflow: hidden; }
+@media (max-width: 800px) { .browser-body { height: 500px; } }
+.browser-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+/* BEFORE panel - dead website */
+.before-content {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 32px;
+  background: #fff;
+  color: #888;
+}
+@media (max-width: 800px) { .before-content { height: 500px; } }
+.before-content .error-icon {
+  font-size: 4rem;
+  margin-bottom: 16px;
+  opacity: 0.4;
+}
+.before-content h3 {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.before-content p { font-size: 0.95rem; max-width: 320px; }
+.before-content .domains {
+  margin-top: 20px;
+  text-align: left;
+  font-family: monospace;
+  font-size: 0.85rem;
+  color: #999;
+  line-height: 2;
+}
+.before-content .domains .dead { color: #C8102E; }
+.live-tag {
+  display: inline-block;
+  background: #2E7D32;
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: 8px;
+}
+.view-demo {
+  display: block;
+  text-align: center;
+  margin-top: 14px;
+  background: #C8102E;
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+.view-demo:hover { background: #A00D26; }
+/* Lists below */
+.lists {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 48px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+@media (max-width: 800px) { .lists { grid-template-columns: 1fr; } }
+.list-box {
+  background: #fff;
+  border: 1px solid #DDD;
+  border-radius: 8px;
+  padding: 28px;
+}
+.list-box h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #EEE;
+}
+.list-box.missing h3 { color: #C8102E; }
+.list-box.included h3 { color: #2E7D32; }
+.list-box ul { list-style: none; }
+.list-box li {
+  padding: 8px 0;
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 0.95rem;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.list-box li:last-child { border-bottom: none; }
+.list-box.missing li::before { content: "✗"; color: #C8102E; font-weight: 700; flex-shrink: 0; }
+.list-box.included li::before { content: "✓"; color: #2E7D32; font-weight: 700; flex-shrink: 0; }
+.footer {
+  background: #111;
+  color: #888;
+  text-align: center;
+  padding: 28px 20px;
+  font-size: 0.85rem;
+}
+.footer a { color: #C8102E; text-decoration: none; font-weight: 700; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="kicker">Lexis Sapphire Studio · Website Redesign</div>
+  <h1>Save On Tire Complete Auto Repair<br>Before &amp; After</h1>
+  <p>They have three domain names. None of them load. Here's what their website should look like.</p>
+</div>
+
+<div class="panels">
+  <div>
+    <div class="panel-label before">✗ BEFORE — No Working Website</div>
+    <div class="browser-frame">
+      <div class="browser-bar">
+        <span class="dot" style="background:#FF5F57;"></span>
+        <span class="dot" style="background:#FEBC2E;"></span>
+        <span class="dot" style="background:#28C840;"></span>
+        <span class="url">saveontire.net</span>
+      </div>
+      <div class="before-content">
+        <div class="error-icon">🌐</div>
+        <h3>This Site Can't Be Reached</h3>
+        <p>All three of their domains fail to load. Customers searching online hit a dead end.</p>
+        <div class="domains">
+          <div><span class="dead">✗</span> saveontire.net — fails to load</div>
+          <div><span class="dead">✗</span> saveontireauto.com — fails to load</div>
+          <div><span class="dead">✗</span> saveontire.me — fails to load</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="panel-label after">✓ AFTER — New Website <span class="live-tag">LIVE PREVIEW — Scroll to explore</span></div>
+    <div class="browser-frame">
+      <div class="browser-bar">
+        <span class="dot" style="background:#FF5F57;"></span>
+        <span class="dot" style="background:#FEBC2E;"></span>
+        <span class="dot" style="background:#28C840;"></span>
+        <span class="url">rishaofficial.github.io/save-on-tire-demo</span>
+      </div>
+      <div class="browser-body">
+        <iframe src="index.html" title="Save On Tire demo website preview" loading="lazy"></iframe>
+      </div>
+    </div>
+    <a href="index.html" class="view-demo" target="_blank">View Full Demo →</a>
+  </div>
+</div>
+
+<div class="lists">
+  <div class="list-box missing">
+    <h3>What's Missing Now</h3>
+    <ul>
+      <li>No working website at all (3 dead domains)</li>
+      <li>No way to find services online</li>
+      <li>No prices or specials visible anywhere</li>
+      <li>No hours listed on their own site</li>
+      <li>No photos of the shop or work</li>
+      <li>No online appointment request</li>
+      <li>No reviews showcased (767 at 4.7 stars!)</li>
+      <li>No ASE certification mentioned online</li>
+      <li>No way to find them except Google Maps</li>
+      <li>Customers can't learn about them before calling</li>
+      <li>New customers go to competitors with websites</li>
+      <li>22 years of reputation invisible online</li>
+    </ul>
+  </div>
+  <div class="list-box included">
+    <h3>What's Included in the Redesign</h3>
+    <ul>
+      <li>Full working website, mobile-friendly</li>
+      <li>All 8 services with descriptions and pricing</li>
+      <li>Current specials: $49.95 alignment, $249.95 brakes</li>
+      <li>Free brake inspection and free alignment offers</li>
+      <li>Hours with live open/closed status</li>
+      <li>Location with Google Maps directions</li>
+      <li>6 real customer reviews (4.7 stars, 767 total)</li>
+      <li>ASE certification prominently featured</li>
+      <li>Click-to-call on every section</li>
+      <li>"Schedule Appointment" call to action</li>
+      <li>20+ year history and family-owned story</li>
+      <li>Professional design that matches their reputation</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <p>Demo redesign by <a href="https://rishaofficial.github.io/lexis-sapphire-studio/" target="_blank">Lexis Sapphire Studio</a>. This is a concept website created to demonstrate a modern redesign. Not affiliated with Save On Tire Complete Auto Repair.</p>
+</div>
+
+</body>
+</html>

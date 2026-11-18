@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Save On Tire Complete Auto Repair — Detroit Since 2004</title>
+<meta name="description" content="Save On Tire Complete Auto Repair. Detroit's trusted auto shop since 2004. Tires, brakes, alignment, transmission, engine repair. ASE certified. 19400 Grand River Ave.">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --charcoal: #1A1A1A;
+  --charcoal-light: #242424;
+  --dark: #111111;
+  --red: #C8102E;
+  --red-dark: #A00D26;
+  --white: #FFFFFF;
+  --off-white: #F5F5F5;
+  --gray: #888888;
+  --gray-light: #CCCCCC;
+  --border: #333333;
+}
+body {
+  font-family: 'Archivo', -apple-system, sans-serif;
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.6;
+}
+h1, h2, h3, .oswald { font-family: 'Oswald', sans-serif; text-transform: uppercase; letter-spacing: 0.02em; }
+
+/* Top bar */
+.topbar {
+  background: var(--dark);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 0.85rem;
+}
+.topbar a { color: #fff; text-decoration: none; font-weight: 700; font-size: 1rem; }
+.topbar a:hover { color: var(--red); }
+.topbar .open-now { display: flex; align-items: center; gap: 6px; }
+.topbar .dot { width: 8px; height: 8px; background: #4CAF50; border-radius: 50%; display: inline-block; }
+.topbar .dot.closed { background: var(--red); }
+
+/* Header / nav */
+.header {
+  background: var(--charcoal);
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 3px solid var(--red);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 0.5px;
+}
+.logo span { color: var(--red); }
+.logo small {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: var(--gray-light);
+  margin-top: 2px;
+}
+.nav { display: flex; gap: 24px; flex-wrap: wrap; }
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.nav a:hover { color: var(--red); }
+.cta-btn {
+  background: var(--red);
+  color: #fff;
+  padding: 10px 22px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+.cta-btn:hover { background: var(--red-dark); }
+
+/* Hero */
+.hero {
+  position: relative;
+  min-height: 480px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+.hero img.bg {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(to top, rgba(17,17,17,0.92) 0%, rgba(17,17,17,0.55) 50%, rgba(17,17,17,0.25) 100%);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px 48px;
+  width: 100%;
+  color: #fff;
+}
+.hero-kicker {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--red);
+  margin-bottom: 10px;
+}
+.hero h1 {
+  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  line-height: 1.02;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.hero p.sub {
+  font-size: clamp(1.05rem, 2.5vw, 1.3rem);
+  color: var(--gray-light);
+  max-width: 620px;
+  margin-bottom: 24px;
+}
+.hero-stats {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+}
+.hero-stat { }
+.hero-stat .num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1;
+}
+.hero-stat .label {
+  font-size: 0.8rem;
+  color: var(--gray-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+.hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+.btn-white {
+  background: #fff;
+  color: var(--charcoal);
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+.btn-white:hover { background: var(--gray-light); }
+.btn-red {
+  background: var(--red);
+  color: #fff;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+.btn-red:hover { background: var(--red-dark); }
+
+/* Specials strip */
+.specials {
+  background: var(--red);
+  color: #fff;
+  padding: 20px;
+}
+.specials-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.special-item { text-align: center; flex: 1; min-width: 180px; }
+.special-item .price {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.special-item .label {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin-top: 2px;
+}
+.special-divider {
+  width: 1px;
+  background: rgba(255,255,255,0.3);
+  align-self: stretch;
+}
+@media (max-width: 640px) { .special-divider { display: none; } }
+
+/* Section base */
+.section { max-width: 1100px; margin: 0 auto; padding: 56px 20px; }
+.section-kicker {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  color: var(--red);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 1.1;
+  color: var(--charcoal);
+  margin-bottom: 16px;
+}
+.section p.lead { font-size: 1.05rem; color: #555; max-width: 700px; margin-bottom: 32px; }
+
+/* Services - bold numbered list */
+.services-list { border-top: 2px solid var(--charcoal); }
+.service-row {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  gap: 20px;
+  align-items: start;
+  padding: 22px 0;
+  border-bottom: 1px solid #E0E0E0;
+}
+@media (max-width: 640px) {
+  .service-row { grid-template-columns: 44px 1fr; }
+  .service-row .service-price { display: none; }
+}
+.service-num {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+}
+.service-row h3 { font-size: 1.25rem; margin-bottom: 4px; }
+.service-row p { font-size: 0.95rem; color: #555; }
+.service-price {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--charcoal);
+  white-space: nowrap;
+  text-align: right;
+}
+.service-price small { display: block; font-family: 'Archivo', sans-serif; font-size: 0.75rem; color: var(--gray); font-weight: 400; }
+
+/* Photo band */
+.photo-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+.photo-band img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 640px) {
+  .photo-band { grid-template-columns: 1fr; }
+  .photo-band img { height: 200px; }
+}
+
+/* Why us - dark section */
+.why {
+  background: var(--charcoal);
+  color: #fff;
+}
+.why-inner { max-width: 1100px; margin: 0 auto; padding: 56px 20px; }
+.why .section-kicker { color: var(--red); }
+.why h2 { color: #fff; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 32px;
+}
+@media (max-width: 700px) { .why-grid { grid-template-columns: 1fr; } }
+.why-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+.why-item h3 span { color: var(--red); }
+.why-item p { font-size: 0.95rem; color: var(--gray-light); line-height: 1.6; }
+
+/* Reviews */
+.reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 8px;
+}
+@media (max-width: 700px) { .reviews-grid { grid-template-columns: 1fr; } }
+.review-card {
+  background: var(--off-white);
+  padding: 28px;
+  border-left: 4px solid var(--red);
+}
+.review-card .stars { color: var(--red); font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 10px; }
+.review-card p { font-size: 1rem; line-height: 1.6; margin-bottom: 12px; font-style: italic; }
+.review-card cite {
+  font-style: normal;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gray);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.rating-summary {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.rating-summary .big {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.rating-summary .stars-big { color: var(--red); font-size: 1.4rem; letter-spacing: 2px; }
+.rating-summary p { color: var(--gray); font-size: 0.95rem; }
+
+/* Visit - split layout */
+.visit {
+  background: var(--off-white);
+  border-top: 1px solid #E0E0E0;
+}
+.visit-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+@media (max-width: 700px) { .visit-inner { grid-template-columns: 1fr; } }
+.visit h2 { font-size: 1.9rem; margin-bottom: 16px; }
+.visit-info p { font-size: 1.05rem; margin-bottom: 10px; }
+.visit-info a { color: var(--red); font-weight: 700; text-decoration: none; font-size: 1.2rem; }
+.visit-info a:hover { text-decoration: underline; }
+.hours-table { width: 100%; border-collapse: collapse; margin-top: 8px; }
+.hours-table td {
+  padding: 10px 0;
+  border-bottom: 1px solid #DDD;
+  font-size: 1rem;
+}
+.hours-table td:last-child { text-align: right; font-weight: 600; }
+.hours-table tr.today td { color: var(--red); font-weight: 700; }
+.open-pill {
+  display: inline-block;
+  background: #2E7D32;
+  color: #fff;
+  padding: 5px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 14px;
+}
+.open-pill.closed { background: var(--red); }
+
+/* CTA band */
+.cta-band {
+  background: var(--red);
+  color: #fff;
+  text-align: center;
+  padding: 48px 20px;
+}
+.cta-band h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); margin-bottom: 10px; }
+.cta-band p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 24px; }
+.cta-band a {
+  display: inline-block;
+  background: #fff;
+  color: var(--red);
+  padding: 14px 32px;
+  text-decoration: none;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 3px;
+}
+
+/* Footer */
+.footer {
+  background: var(--dark);
+  color: #999;
+  padding: 36px 20px;
+  text-align: center;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+.footer a { color: #fff; text-decoration: none; }
+.footer .disclaimer { margin-top: 12px; opacity: 0.6; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="open-now"><span class="dot" id="topDot"></span> <span id="topStatus">Open Now</span> &nbsp;·&nbsp; Mon–Fri 8–6 · Sat 8–3</span>
+  <span><a href="tel:+13134725594">(313) 472-5594</a></span>
+  <span>19400 Grand River Ave, Detroit</span>
+</div>
+
+<header class="header">
+  <div class="logo">Save On <span>Tire</span><small>Complete Auto Repair · Est. 2004</small></div>
+  <nav class="nav">
+    <a href="#services">Services</a>
+    <a href="#why">Why Us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#visit">Visit Us</a>
+  </nav>
+  <a href="tel:+13134725594" class="cta-btn">Call Now</a>
+</header>
+
+<section class="hero">
+  <img class="bg" src="images/hero-shop.jpg" alt="Mechanic working on a car engine at Save On Tire">
+  <div class="hero-content">
+    <div class="hero-kicker">Detroit's Trusted Auto Shop Since 2004</div>
+    <h1>Honest Work.<br>Fair Prices.<br>Done Right.</h1>
+    <p class="sub">Tires, brakes, alignment, transmission, engine repair, and everything in between. Family owned for over 20 years at Grand River &amp; Outer Drive.</p>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="num">4.7 ★</div><div class="label">767 Google Reviews</div></div>
+      <div class="hero-stat"><div class="num">20+ YRS</div><div class="label">Serving Detroit</div></div>
+      <div class="hero-stat"><div class="num">ASE</div><div class="label">Certified Technicians</div></div>
+    </div>
+    <div class="hero-actions">
+      <a href="tel:+13134725594" class="btn-red">Schedule Appointment</a>
+      <a href="#services" class="btn-white">See Services</a>
+    </div>
+  </div>
+</section>
+
+<div class="specials">
+  <div class="specials-inner">
+    <div class="special-item">
+      <div class="price">$49.95</div>
+      <div class="label">Wheel Alignment</div>
+    </div>
+    <div class="special-divider"></div>
+    <div class="special-item">
+      <div class="price">$249.95</div>
+      <div class="label">Brakes &amp; Rotors, starting at</div>
+    </div>
+    <div class="special-divider"></div>
+    <div class="special-item">
+      <div class="price">FREE</div>
+      <div class="label">Brake Inspection</div>
+    </div>
+    <div class="special-divider"></div>
+    <div class="special-item">
+      <div class="price">FREE</div>
+      <div class="label">Alignment with 4 New Tires</div>
+    </div>
+  </div>
+</div>
+
+<section class="section" id="services">
+  <div class="section-kicker">What We Do</div>
+  <h2>Full Service. One Shop.</h2>
+  <p class="lead">From a tire rotation to a full transmission rebuild, our ASE certified technicians handle it all. No job too small, no problem we haven't seen before.</p>
+
+  <div class="services-list">
+    <div class="service-row">
+      <div class="service-num">01</div>
+      <div>
+        <h3>Tires</h3>
+        <p>New and used tires, mounting, balancing, rotation, TPMS reset, and disposal. We carry all major brands and beat competitor prices.</p>
+      </div>
+      <div class="service-price">Free alignment<small>with 4 new tires</small></div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">02</div>
+      <div>
+        <h3>Wheel Alignment</h3>
+        <p>Precision alignment using Hunter equipment. Fixes uneven tire wear, pulling, and steering issues. Keeps you safe and your tires lasting longer.</p>
+      </div>
+      <div class="service-price">From $49.95</div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">03</div>
+      <div>
+        <h3>Brakes</h3>
+        <p>Pads, rotors, calipers, and full brake system service. Free brake inspection with every visit. Your safety is not optional.</p>
+      </div>
+      <div class="service-price">From $249.95<small>brakes &amp; rotors</small></div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">04</div>
+      <div>
+        <h3>Suspension &amp; Steering</h3>
+        <p>Shocks, struts, ball joints, tie rods, and power steering. If your ride feels rough or your steering feels loose, we fix it.</p>
+      </div>
+      <div class="service-price">Free inspection</div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">05</div>
+      <div>
+        <h3>Engine &amp; Transmission</h3>
+        <p>Engine diagnostics, timing chains, transmission service and repair. We explain what's wrong and give you options before we touch anything.</p>
+      </div>
+      <div class="service-price">Free estimate</div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">06</div>
+      <div>
+        <h3>Electrical Diagnostics</h3>
+        <p>Battery, alternator, starter, wiring, and check engine light diagnosis. Modern cars have complex electronics. We know how to read them.</p>
+      </div>
+      <div class="service-price">Free estimate</div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">07</div>
+      <div>
+        <h3>Oil Changes &amp; Maintenance</h3>
+        <p>Full synthetic and conventional oil changes, filters, fluids, and scheduled maintenance. Keep your car running at its best.</p>
+      </div>
+      <div class="service-price">Same-day service</div>
+    </div>
+    <div class="service-row">
+      <div class="service-num">08</div>
+      <div>
+        <h3>Heating, Cooling &amp; AC</h3>
+        <p>AC recharge, heater repair, radiator service, and coolant flushes. Detroit summers and winters are no joke. Your climate control should work.</p>
+      </div>
+      <div class="service-price">Free estimate</div>
+    </div>
+  </div>
+</section>
+
+<div class="photo-band">
+  <img src="images/tires-stack.jpg" alt="Stack of new tires">
+  <img src="images/mechanic-work.jpg" alt="Technician mounting a tire with an impact wrench">
+  <img src="images/engine-bay.jpg" alt="Close-up of engine belts and pulleys">
+</div>
+
+<section class="why" id="why">
+  <div class="why-inner">
+    <div class="section-kicker">Why Save On Tire</div>
+    <h2>Detroit Trusts Us. Here's Why.</h2>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3><span>01.</span> Honest Prices</h3>
+        <p>We give you an estimate before we start. We explain what's wrong and what it costs. No surprises, no upsells, no work you didn't approve.</p>
+      </div>
+      <div class="why-item">
+        <h3><span>02.</span> Certified Techs</h3>
+        <p>Every technician is ASE certified. Moe, Will, and the team have decades of combined experience on every make and model.</p>
+      </div>
+      <div class="why-item">
+        <h3><span>03.</span> Fast Turnaround</h3>
+        <p>Most jobs done same day. Drop your car off in the morning, pick it up by lunch. We know you need your car back.</p>
+      </div>
+      <div class="why-item">
+        <h3><span>04.</span> Family Owned</h3>
+        <p>We're a family business, not a chain. When you come in, you talk to the people who own the shop. We treat you like a neighbor because you are one.</p>
+      </div>
+      <div class="why-item">
+        <h3><span>05.</span> Payment Options</h3>
+        <p>Car repairs are expensive. We offer payment options so you can get the work done now and pay over time. Ask us about it.</p>
+      </div>
+      <div class="why-item">
+        <h3><span>06.</span> 20+ Years Here</h3>
+        <p>We've been at Grand River &amp; Outer Drive since 2004. Our customers come back year after year, and they send their families too.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="reviews">
+  <div class="section-kicker">What Detroit Says</div>
+  <h2>767 Reviews. 4.7 Stars.</h2>
+  <div class="rating-summary">
+    <div class="big">4.7</div>
+    <div>
+      <div class="stars-big">★★★★★</div>
+      <p>767 Google reviews · One of Detroit's highest-rated auto shops</p>
+    </div>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"They replaced all 3 converters, all 4 O2 sensors and put a starter on for free, all for $1,300 parts and labor. Very professional, reasonable, and GREAT GREAT WORK. 10/10 I will be back!"</p>
+      <cite>— Google Reviewer</cite>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"I'm not going anywhere else. Expertise through the roof. Explain everything, showed everything! Service team excellent!"</p>
+      <cite>— Regina H., Yelp</cite>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Moe and Will were very helpful and fast. Dropped my car off at 8am and had it back by noon working."</p>
+      <cite>— Krystal R., Yelp</cite>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"My tires were so horrible that I was afraid to drive, and they had me out on the road in less than an hour with a set of four brand new all weather tires!"</p>
+      <cite>— Google Reviewer</cite>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Since 2009, I have been blessed with car care service from Save On Tire. I truly appreciate the professional, trustworthy, reliable, caring personnel."</p>
+      <cite>— CARFAX Verified Review</cite>
+    </div>
+    <div class="review-card">
+      <div class="stars">★★★★★</div>
+      <p>"Best auto shop in Detroit, hands down. Always gets me in and out in a reasonable time frame. Price always reasonable and they have payment options."</p>
+      <cite>— Google Reviewer</cite>
+    </div>
+  </div>
+</section>
+
+<section class="visit" id="visit">
+  <div class="visit-inner">
+    <div class="visit-info">
+      <span class="open-pill" id="openPill">OPEN NOW</span>
+      <h2>Come See Us</h2>
+      <p><strong>Save On Tire Complete Auto Repair</strong></p>
+      <p>19400 Grand River Ave<br>Detroit, MI 48223<br>(Grand River &amp; W. Outer Dr)</p>
+      <p style="margin-top: 16px;"><a href="tel:+13134725594">(313) 472-5594</a></p>
+      <p style="margin-top: 16px;"><a href="https://www.google.com/maps/search/?api=1&query=Save+On+Tire+Complete+Auto+Repair+19400+Grand+River+Ave+Detroit+MI+48223" target="_blank" style="font-size: 1rem;">Get Directions →</a></p>
+      <p style="margin-top: 16px; color: #555;">Walk-ins welcome. Same-day appointments available. Call ahead and we'll get you in fast.</p>
+      <img src="images/oil-change.jpg" alt="Technician performing an oil change" style="width: 100%; border-radius: 4px; margin-top: 20px;">
+    </div>
+    <div>
+      <h2>Hours</h2>
+      <table class="hours-table" id="hoursTable">
+        <tr data-day="1"><td>Monday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-day="2"><td>Tuesday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-day="3"><td>Wednesday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-day="4"><td>Thursday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-day="5"><td>Friday</td><td>8:00 AM – 6:00 PM</td></tr>
+        <tr data-day="6"><td>Saturday</td><td>8:00 AM – 3:00 PM</td></tr>
+        <tr data-day="0"><td>Sunday</td><td>Closed</td></tr>
+      </table>
+      <p style="margin-top: 20px; color: #555;">Need service outside these hours? Call us and we'll do our best to work with you. Emergency situations happen, and we get it.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta-band">
+  <h2>Your Car Needs Attention. We Can Help.</h2>
+  <p>Call now or walk in. Most jobs done same day.</p>
+  <a href="tel:+13134725594">Call (313) 472-5594</a>
+</div>
+
+<footer class="footer">
+  <p><strong style="color: #fff; font-family: 'Oswald', sans-serif; letter-spacing: 1px;">SAVE ON TIRE COMPLETE AUTO REPAIR</strong></p>
+  <p>19400 Grand River Ave, Detroit, MI 48223 &nbsp;·&nbsp; <a href="tel:+13134725594">(313) 472-5594</a></p>
+  <p>Mon–Fri 8–6 · Sat 8–3 · Closed Sun</p>
+  <p class="disclaimer">Demo redesign by Lexis Sapphire Studio. This is a concept website created to demonstrate a modern redesign. Not affiliated with Save On Tire Complete Auto Repair. Photos: Unsplash. Prices from November 2026 Facebook promotions.</p>
+</footer>
+
+<script>
+// Live open/closed status
+(function() {
+  var hours = { 0: null, 1: [8, 18], 2: [8, 18], 3: [8, 18], 4: [8, 18], 5: [8, 18], 6: [8, 15] };
+  var now = new Date();
+  var day = now.getDay();
+  var h = now.getHours() + now.getMinutes() / 60;
+  var today = hours[day];
+  var isOpen = today && h >= today[0] && h < today[1];
+  var pill = document.getElementById('openPill');
+  var dot = document.getElementById('topDot');
+  var status = document.getElementById('topStatus');
+  if (isOpen) {
+    pill.textContent = 'OPEN NOW';
+    pill.classList.remove('closed');
+    dot.classList.remove('closed');
+    status.textContent = 'Open Now';
+  } else {
+    pill.textContent = 'CLOSED NOW';
+    pill.classList.add('closed');
+    dot.classList.add('closed');
+    status.textContent = 'Closed Now';
+  }
+  // Highlight today in hours table
+  var rows = document.querySelectorAll('#hoursTable tr');
+  rows.forEach(function(tr) {
+    if (parseInt(tr.getAttribute('data-day'), 10) === day) {
+      tr.classList.add('today');
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
